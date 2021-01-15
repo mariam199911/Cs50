@@ -1,0 +1,137 @@
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+}
+
+/* colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+nav .navbar-brand .white
+{
+    color: white;
+}
+.navbar-brown {
+    background-color: #3b0c04;
+    opacity: 0.8;
+}
+.white
+{
+    color: white;
+}
+
+
+.background_1
+{
+
+    background-image: url('/static/gym.jpg');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+
+}
+
+.background_2
+{
+    background-image: url("/static/gym1.jpg");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+
+.background_3
+{
+
+    background-image: url('/static/diet.jpg');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+
+}
+.background_4
+{
+
+    background-image: url('/static/man.jpg');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+
+}
+
+ /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+
+}
+
+/* Clear floats after image containers */
+.row {
+  content: "";
+  clear: both;
+  display: table;
+}
+.img {
+    float: left;
+    width:  300px;
+    height: 300px;
+    object-fit: center;
+}
+
+main .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main
+{
+    /* scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* center contents */
+    text-align: center;
+}
+.footer{
+       font-weight: bolder;
+       position: fixed;
+       text-align: center;
+       bottom: 5px;
+       width: 100%;
+
+   }
+
+main img
+{
+    /* constrain images on small screens */
+    max-width: 100%;
+}
+.opacity
+{
+    opacity: 0.8;
+}
+.bold
+{
+    font-weight: bolder;
+}

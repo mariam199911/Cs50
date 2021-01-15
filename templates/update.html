@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Update
+{% endblock %}
+
+{% block main %}
+    <form action="/update" method="post">
+
+        <div class="form-row">
+            <div class="form-group col">
+                <input autocomplete="off" autofocus class="form-control" name="phone" placeholder="Phone number" type="text">
+            </div>
+            <div class="form-group col">
+                <input autocomplete="off" autofocus class="form-control" name="age" placeholder="Age" type="number">
+            </div>
+            <div class="form-group col">
+                <input autocomplete="off" autofocus class="form-control" name="length" placeholder="Length in cm" type="text">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col">
+                <input autocomplete="off" autofocus class="form-control" name="weight" placeholder="Weight" type="text">
+            </div>
+            <div class="form-group col">
+                <input autocomplete="off" autofocus class="form-control" name="goal_weight" placeholder="Goal Weight" type="text">
+            </div>
+            <div class="form-group col">
+                <select class="form-control" name="months">
+                    <option disabled selected value="">Months to register</option>
+                        <option value = 1 >1 Month</option>
+                        <option value = 3 >3 Months</option>
+                        <option value = 6 >6 Months</option>
+                        <option value = 12 >1 year</option>
+                        <option value = 24 >2 years</option>
+                </select>
+            </div>
+            <div class="form-group col">
+                <select class="form-control" name="is_sick">
+                    <option disabled selected value="">Have a chronic disease?</option>
+                        <option value = "yes" >Yes</option>
+                        <option value = "no" >No</option>
+                </select>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <button class="btn btn-primary" type="submit">Update</button>
+    </form>
+{% endblock %}

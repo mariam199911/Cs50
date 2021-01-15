@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Registered Successfully
+{% endblock %}
+
+{% block main %}
+    <form action="/login" method="get">
+        <div class="alert alert-success bold opacity" role="alert">
+            Registered Successfully
+        </div>
+        <button class="btn btn-primary" type="submit">Log In</button>
+    </form>
+{% endblock %}
